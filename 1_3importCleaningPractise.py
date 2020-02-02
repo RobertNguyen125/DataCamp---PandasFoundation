@@ -16,6 +16,11 @@ df1 = pd.read_csv(file_messy)
 
 # print(df1.head())
 
+# Issues:
+# multiple header lines,
+# comment records (rows) interleaved throughout the data rows,
+# and space delimiters instead of commas.
+
 df2 = pd.read_csv(file_messy, delimiter=' ', header=3, comment='#')
 print(df2.head())
 
